@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="theme-color"
+        content="#063b91"
+    >
+
+    <title>
+        Convite — Patrono | Turma de Matemática Licenciatura | UEMA
+    </title>
+
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         TELA DE ABERTURA
+    ====================================================== -->
+
+    <div
+        id="abertura"
+        class="abertura"
+    >
+
+        <div class="abertura-brilho"></div>
+
+        <div class="abertura-conteudo">
+
+            <div class="capelo">
+                🎓
+            </div>
+
+            <p class="abertura-superior">
+                UNIVERSIDADE ESTADUAL DO MARANHÃO
+            </p>
+
+            <div class="linha-dourada"></div>
+
+            <h1>
+                Formatura
+            </h1>
+
+            <p class="abertura-curso">
+                Matemática Licenciatura
+            </p>
+
+            <p class="abertura-turma">
+                Polo Água Doce do Maranhão
+            </p>
+
+            <button
+                id="btnAbrir"
+                class="btn-abrir"
+            >
+                <span>ABRIR CONVITE</span>
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         MÚSICA
+    ====================================================== -->
+
+    <audio
+        id="audio"
+        loop
+    >
+
+        <source
+            src="musica/Jota Quest - Dias Melhores (Acústico).mp3"
+            type="audio/mpeg"
+        >
+
+    </audio>
+
+
+    <button
+        id="botaoMusica"
+        class="botao-musica"
+        aria-label="Controlar música"
+    >
+        ♪
+    </button>
+
+
+
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
+
+    <header class="hero">
+
+        <div class="hero-overlay"></div>
+
+        <div class="particulas"></div>
+
+        <div class="hero-conteudo">
+
+            <p class="hero-superior">
+                UNIVERSIDADE ESTADUAL DO MARANHÃO
+            </p>
+
+            <div class="linha-dourada"></div>
+
+            <p class="hero-evento">
+                CONVITE DE FORMATURA
+            </p>
+
+            <h1> 
+                Matemática
+            </h1>
+
+            <h2>
+                Licenciatura
+            </h2>
+
+            <p class="hero-polo">
+                POLO ÁGUA DOCE DO MARANHÃO
+            </p>
+
+            <div class="hero-data">
+
+                <span>
+                    08
+                </span>
+
+                <div>
+                    <strong>
+                        DEZEMBRO
+                    </strong>
+
+                    <small>
+                        2026
+                    </small>
+                </div>
+
+            </div>
+
+            <div class="scroll">
+
+                <span>
+                    DESLIZE PARA CONTINUAR
+                </span>
+
+                <i></i>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         MENSAGEM
+    ====================================================== -->
+
+    <section class="mensagem">
+
+        <div class="container">
+
+            <p class="pequeno-titulo">
+                UMA CONQUISTA
+            </p>
+
+            <h2>
+                Um sonho que se tornou realidade.
+            </h2>
+
+            <div class="linha-dourada"></div>
+            <h2  class="patrono">
+                "Ao nosso querido Patrono, Professor Sérgio Noleto Turibus!"
+            </h2> <br>
+        
+
+            <p class="texto">
+
+                Há pessoas que tornam nossa caminhada mais leve
+                e especial, não apenas pelo conhecimento 
+                que compartilham, mas, sobretudo, pela humanidade,
+                gentileza e carinho com que nos acolhem.
+
+                <br><br>
+
+               Ao longo da nossa trajetória acadêmica,
+                o senhor foi muito além do papel de
+                 professor. Sua maneira tão generosa de 
+                 nos receber, sua atenção e seu carinho construíram laços que levaremos conosco para além da universidade. Por isso, sua presença em nossa história tem um significado que vai muito além da sala de aula.
+
+                <br><br>
+
+                É com imenso carinho, respeito e admiração que oficializamos sua escolha como Patrono da
+                <strong>
+                    Turma de Matemática Licenciatura!
+                </strong>
+               
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         CONTAGEM
+    ====================================================== -->
+
+    <section class="contador-section">
+
+        <div class="container">
+
+            <p class="pequeno-titulo">
+                O GRANDE DIA
+            </p>
+
+            <h2>
+                A contagem começou
+            </h2>
+
+            <div class="linha-dourada"></div>
+
+
+            <div class="contador">
+
+                <div class="contador-item">
+
+                    <strong id="dias">
+                        00
+                    </strong>
+
+                    <span>
+                        DIAS
+                    </span>
+
+                </div>
+
+
+                <div class="contador-item">
+
+                    <strong id="horas">
+                        00
+                    </strong>
+
+                    <span>
+                        HORAS
+                    </span>
+
+                </div>
+
+
+                <div class="contador-item">
+
+                    <strong id="minutos">
+                        00
+                    </strong>
+
+                    <span>
+                        MINUTOS
+                    </span>
+
+                </div>
+
+
+                <div class="contador-item">
+
+                    <strong id="segundos">
+                        00
+                    </strong>
+
+                    <span>
+                        SEGUNDOS
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         COLAÇÃO DE GRAU
+    ====================================================== -->
+
+    <section class="colacao">
+
+        <div class="colacao-decoracao"></div>
+
+        <div class="container">
+
+            <p class="pequeno-titulo">
+                MOMENTO ESPECIAL
+            </p>
+
+            <h2>
+                Colação de Grau
+            </h2>
+
+            <div class="linha-dourada"></div>
+
+            <p class="colacao-texto">
+
+                Chegou o momento de celebrar o encerramento
+                de uma etapa e o início de uma nova jornada.
+
+                <br><br>
+
+                A solenidade de
+                <strong>
+                    Colação de Grau
+                </strong>
+                da turma de
+                <strong>
+                    Matemática Licenciatura
+                </strong>
+                será realizada em uma noite preparada
+                para guardar memórias para toda a vida.
+
+            </p>
+
+
+            <div class="colacao-data">
+
+                <div>
+
+                    <span>
+                        08
+                    </span>
+
+                    <small>
+                        DE DEZEMBRO
+                    </small>
+
+                    <small>
+                        2026
+                    </small>
+
+                </div>
+
+
+                <div class="separador"></div>
+
+
+                <div>
+
+                    <span>
+                        18:30h
+                    </span>
+
+                    <small>
+                        INÍCIO
+                    </small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         LOCAL
+    ====================================================== -->
+
+    <section class="local">
+
+        <div class="container">
+
+            <p class="pequeno-titulo">
+                ONDE NOS ENCONTRAR
+            </p>
+
+            <h2>
+                O grande encontro
+            </h2>
+
+            <div class="linha-dourada"></div>
+
+
+            <div class="local-card">
+
+                <div class="local-icon">
+                    📍
+                </div>
+
+                <h3>
+                    Quadra da Brita (Nova Praça de Eventos)
+                </h3>
+
+                <p>
+                    Rua Nossa Srª do Carmo, S/Nº Bairro Vietnã
+                </p>
+
+                <p>
+                    Água Doce do Maranhão — MA
+                </p>
+
+                <a
+                    class="btn"
+                    href="https://maps.app.goo.gl/3DeLkX4DgjA9PPPT8"
+                >
+                    ABRIR LOCALIZAÇÃO
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         GALERIA
+    ====================================================== -->
+
+    <section class="galeria-section">
+
+        <div class="container">
+
+            <p class="pequeno-titulo">
+                MEMÓRIAS
+            </p>
+
+            <h2>
+                Uma história para recordar
+            </h2>
+
+            <div class="linha-dourada"></div>
+
+
+            <div class="galeria">
+
+                <div class="foto foto-grande">
+
+                    <img
+                        src="imagens/imagem 01.jpg" alt="Formatura"
+                    >
+
+                </div>
+
+
+                <div class="foto">
+
+                    <img
+                        src="imagens/imagem 02.jpg"
+                        alt="Formatura"
+                    >
+
+                </div>
+
+
+                <div class="foto">
+
+                    <img
+                        src="imagens/imagem 03.jpg"
+                        alt="Turma"
+                    >
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         MENSAGEM FINAL
+    ====================================================== -->
+
+    <section class="final">
+
+        <div class="container">
+          
+            <h2>
+                Toda grande conquista
+                começa com um sonho. 
+            </h2>
+
+            <p>
+
+                E hoje celebramos não apenas
+                um diploma, mas toda a trajetória
+                que nos trouxe até aqui.
+
+            </p>
+
+            <div class="linha-dourada"></div>
+
+            <strong>
+                TURMA DE MATEMÁTICA LICENCIATURA
+            </strong>
+
+            <span>
+                UEMA — POLO ÁGUA DOCE DO MARANHÃO
+            </span>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         CONFIRMAÇÃO
+    ====================================================== -->
+
+    <section class="confirmacao">
+
+        <div class="container">
+
+            <p class="pequeno-titulo">
+                SUA PRESENÇA É ESPECIAL
+            </p>
+
+            <h2>
+                Vamos celebrar juntos?
+            </h2>
+
+            <div class="linha-dourada"></div>
+
+            <p>
+
+                Confirme sua presença através
+                do WhatsApp.
+
+            </p>
+
+
+            <a
+                id="whatsapp"
+                class="btn btn-whatsapp"
+                href="#"
+                target="_blank"
+            >
+                CONFIRMAR PRESENÇA
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         RODAPÉ
+    ====================================================== -->
+
+    <footer>
+
+        <div class="capelo-footer">
+            🎓
+        </div>
+
+        <h3>
+            Matemática Licenciatura
+        </h3>
+
+        <p>
+            UNIVERSIDADE ESTADUAL DO MARANHÃO — UEMA
+        </p>
+
+        <p>
+            POLO ÁGUA DOCE DO MARANHÃO
+        </p>
+
+        <div class="linha-dourada"></div>
+
+        <small>
+            08 DE DEZEMBRO DE 2026 • 18:30H
+        </small>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
